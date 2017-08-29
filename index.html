@@ -1,474 +1,208 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
+<html>
 <head>
-    <title>Miyu : Prism</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=0.54, maximum-scale=2.0, user-scalable=yes">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-    <link rel="stylesheet" href="/dr6pzAEZ.css">
-    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <script>
-        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
-    </script>
+  <title>Reprd-World | phi16</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=0.54, maximum-scale=2.0, user-scalable=yes">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+  function procExt(s){
+    return s.replace(/(http[^\s\n]*)/g,"&nbsp;<a href=\"$1\">$1</a>&nbsp;").replace(/\n/g,"<br>");
+  }
+  </script>
+  <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="main" role="main">
-            <div id="site">
-                <div id="icon">
-                    <img src="/img/prism.png" height="90px">
-                </div>
-                <div id="header"><a href="/"><h1>Miyu : Prism</h1></a>
-                    <div id="sideS">&nbsp;Temporary page</div>
-                </div>
-                <div id="headerPad"></div>
-                <div id="widget">
-                    <script src="/jquery-1.11.0.min.js"></script>
-                    <script src="/lightbox.min.js"></script>
-                    <link href="/lightbox.css" rel="stylesheet">
-                    <div id="title">About</div>
-                    <div class="indent">
-                        <div class="stat"></div>
-                        無理やり稼働させていたノート鯖(Miyu)が物理的に死んだのでとりあえず置いとくページです。
-                        <div></div>
-                        いつかちゃんとしたページつくりたいですね・・・
-                        <div></div>
-                        Google Chrome用。
-                        <div></div>
-                        <div style="font-family:Aclonica;float:left;padding-left:20px;padding-top:45px;padding-bottom:20px;font-size:70px;color:#37f;background:-webkit-linear-gradient(#0ff, #70f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">phi16</div>
-                        <ul style="padding-left:260px;font-family:Aclonica;font-size:30px">
-                            <li style="color:#07f">Haskell</li>
-                            <li style="color:#70f">GameCreator</li>
-                    </div>
-                </div>
-                <div id="widget">
-                    <link href="/lightbox.css" rel="stylesheet">
-                    <div id="title">Profile</div>
-                    <div class="indent">
-                        <div class="stat"></div>
-                        <ul>
-                            <li>言語作ったりゲーム作ったりしてます。</li>
-                            <li>東京工業大学情報工学科2年</li>
-                            <ul>
-                                <li>型理論とか圏論に興味があります。</li>
-                                <li><a href="https://www.rogiken.org">ロボット技術研究会</a></li>
-                                <li><a href="https://trapti.tech">デジタル創作同好会traP</a></li>
-                            </ul>
-                            <li>言語</li>
-                            <ul>
-                              <li>常用 : Haskell, JavaScript</li>
-                              <li>普通 : C++, C, Java, GLSL, ActionScript3, Objective-C, Swift</li>
-                              <li>経験有 : sh, Scheme, C#</li>
-                              <li>嫌い : Objective-C, Ruby, PHP, Perl</li>
-                            </ul>
-                            <li>Email : phi16.256&lt;at&gt;gmail.com</li>
-                            <li>Twitter :&nbsp;<a href="https://twitter.com/phi16_">@phi16_</a></li>
-                            <li>GitHub :&nbsp;<a href="https://github.com/phi16">phi16</a></li>
-                            <li>Steam :&nbsp;<a href="https://steamcommunity.com/id/phi16/">phi16</a></li>
-                            <li>Wonderfl :&nbsp;<a href="http://wonderfl.net/user/phi16">phi16</a></li>
-                            <li>TopCoder :&nbsp;<a href="https://www.topcoder.com/members/phi16">phi16</a></li>
-                            <li>Shadertoy : &nbsp;<a href="https://www.shadertoy.com/user/phi16">phi16</a></li>
-                            <li>Skype : phi16.</li>
-                        </ul>
-                        連絡はTwitterが一番早いと思います。
-                    </div>
-                </div>
-                <div id="widget">
-                    <link href="/lightbox.css" rel="stylesheet">
-                    <div id="title">Works</div>
-                    <div class="indent">
-                        <div class="stat"></div>メインコンテンツになってしまった
-                        <div class="stat"></div>
-                        <div class="float">
-                            <a href="/img/scsh/tbl.png" data-lightbox="scsh" data-title="TurnBlock (Windows BetterC)lf最初のまともなゲーム。シューティングです。lfこの頃から線画好きだった。けどシンプルでいいよね。lfゲーム自体は調整全然できてないけど見た目がきれいなのでいいかなって。">
-                                <img src="/img/scsh/tbl_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/pok.png" data-lightbox="scsh" data-title="Poker (Windows C++)lf線画3Dエンジンが出来たのでポーカーつくった。lfあんまりポーカーに詳しくはないのでAIも全部適当仕様。lf明らかにパース狂ってるのは内緒。ここから四元数大好きになった。">
-                                <img src="/img/scsh/pok_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/grap.png" data-lightbox="scsh" data-title="KeyboardStringShortCutter (Windows BetterC)lf名前そのまま。好きなショートカットでいつでもランチャーが呼び出せる。lfキーボードのみでいろいろ使いたかったのでつくった。lfAero Glass化は@wx257osn2さんより。">
-                                <img src="/img/scsh/grap_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/aSGi"><img src="/img/scsh/spr_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/bldn.png" data-lightbox="scsh" data-title="BlockDown (Linux Haskell)lfHaskellでゲームをつくろうとしてとりあえずアイディアもってきた。lf横5列に同じ色を置くと消える。縦3でも消えるけどスコアが入らない。lf移動は矢印のみ。慣れると簡単になってくるので難易度調整難しい。">
-                                <img src="/img/scsh/bldn_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/diff.png" data-lightbox="scsh" data-title="Diffroma (Android Java)lfAndroidで作った最初のゲーム。lf同じような色を線で結ぶと、似ている度に応じて点が入る。lf90%以上でChainがでるのでそれを繋ぎつつけるゲーム。">
-                                <img src="/img/scsh/diff_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/b10q.png" data-lightbox="scsh" data-title="b10q[ぶろっく] (Android Java)lfテトリスを改造したゲームを作ってたらこうなった。lf隣接する数字が4つ以上つながると消えるけどつながった瞬間には消えない。lfひたすらChainを繋げるゲーム。たのしい。">
-                                <img src="/img/scsh/b10q_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/blt.png" data-lightbox="scsh" data-title="BulletTest (Windows C++)lfただ単に3D物理演算エンジンBulletを試したかっただけ。lf単なるキューブの他にも机や椅子を出せる。lf元々は学校をゲームにしたかったんだけどめんどくさくて断念。">
-                                <img src="/img/scsh/blt_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/blw.png" data-lightbox="scsh" data-title="Bowling (Windows C++)lfWiiRemoteを使ったBowling。操作性皆無。lfソルティライチのテクスチャは自作です。4日。lfDirect3D/Bulletを使った初めてのまともなゲーム。">
-                                <img src="/img/scsh/blw_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/msi.png" data-lightbox="scsh" data-title="Fuwasweeper (Windows C++)lfモーションがふわふわしてるけどその実はただの自動機能搭載マインスイーパ。lf見えるところから推論してできるだけ開けて旗立てる。lfこれは1度クリックしただけの状態です。げーむじゃない。">
-                                <img src="/img/scsh/msi_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/lBXR"><img src="/img/scsh/reti_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/wvi.png" data-lightbox="scsh" data-title="Wave (Windows BetterC)lf単なる波シミュ。壁置けたり波源置けたりするだけ。lfでもなぜかバグる。こんなのでバグ生成していいのかわたし。lf一応楽しめるのでそれはそれでよし。">
-                                <img src="/img/scsh/wvi_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/rec.png" data-lightbox="scsh" data-title="Recaller (Windows C++)lf物事って木構造的に考えられることが多いっていうのを思って作った。lf主にメモ用。ちなみにズームとかも勿論自由にできます。lf力学的アルゴリズムがちょっと弱くて綺麗に表示するまで時間がかかる。">
-                                <img src="/img/scsh/rec_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/proc.png" data-lightbox="scsh" data-title="WireProc (Windows C++)lfグラフィカルなプログラミング言語をつくろうとして試作。lfこれはフィボナッチの生成コード。のはず。自己再帰もできる。lf・・・が、動くところまで実装していない。ついでに仕様もゆれゆれ。">
-                                <img src="/img/scsh/proc_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/spc.png" data-lightbox="scsh" data-title="IconGen (Processing GLSL)"><img src="/img/scsh/spc_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/str.png" data-lightbox="scsh" data-title="Stroke (Android Java)lfガラケー2タッチに慣れすぎたのでAndroidでもやりたかった。lf分かる人なら分かる。ついでに214とスライドすると「かえ」(=2114)になる。lf両手入力だとすごく速い。バグさえ無ければもっと自信持って紹介できるのだけど。">
-                                <img src="/img/scsh/str_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/qchi.png" data-lightbox="scsh" data-title="QromaKey (Windows C++)lf今まで作った中で一番まともなゲーム。lf左下のパレットを回転して背景の色を決めて、同じ色のブロックは当たらなくなる。lfゲーム性もいいとはおもうのだけど7Stageの予定が4までしかできてない。">
-                                <img src="/img/scsh/qchi_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/mI1c"><img src="/img/scsh/hglu_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/moy.png" data-lightbox="scsh" data-title="Catan (Windows C++)lfカタンをおうちでやりたかった。もってない。lf大好き線画3D、ぐるぐる動くよ！結構グラフィック綺麗でいい感じ。lfネットワーク周りにバグ多すぎて公開できない。ゲーム終了つくってないし。">
-                                <img src="/img/scsh/moy_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/tesm.png" data-lightbox="scsh" data-title="Tetris Simulator (Windows C++)lfただのテトリスのシミュのはずだったんだけど、自分仕様にチューニングした。lfまずNext/Holdは1マスで表示。形を見るのに依存しないように。lfフィールドも小さめで覚えるようにしてみた。けどそんなに成長はしなかった。">
-                                <img src="/img/scsh/tesm_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/4LA0"><img src="/img/scsh/qtet_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/trig.png" data-lightbox="scsh" data-title="3ght[とらいと] (Windows C++)lf暇なので1日でつくった。読みはtri-とli-で掛けたつもり。その割には光らないけど。lf矢？が流れてくるから照準の色・的の方向を操作して色を揃える。lfTGM的スピードアップから連想。実際そんな感じになった。">
-                                <img src="/img/scsh/trig_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/preu.png" data-lightbox="scsh" data-title="Reflei (Android Java)lfWIP。n回の反射で目的地にー、みたいなのをつくろうとした。lf反射計算はRayMarchなのでもっと複雑な形もできます。lfでも任意の関数を距離場化するのがわからなくて放置。">
-                                <img src="/img/scsh/preu_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/2PClm"><img src="/img/scsh/moti_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/peil.png" data-lightbox="scsh" data-title="Peano Tile (Haskell)lflink{https://github.com/phi16/RayMarch}link"><img src="/img/scsh/peil_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/refl.png" data-lightbox="scsh" data-title="ReflectBlock (Windows C++)lf後輩氏にわかりやすいゲームつくっていっていわれたのでつくった。lf元はもっと単純なのだけど改造結果反射(神経)ゲーム化した。lfエフェクト過多なのは仕様。あくまでサンプルゲーなのです。">
-                                <img src="/img/scsh/refl_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/mpss.png" data-lightbox="scsh" data-title="MemoryPinball (iOS Objective-C)lflumosityのメモリーピンボールのクローンつくっただけです。lfお家であそべないしWonderflに移植しようかとも思ったけどめんどかった。lfSpriteのscale弄って線のアニメーションするのがめっちゃ楽だった。">
-                                <img src="/img/scsh/mpss_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/ram.png" data-lightbox="scsh" data-title="Menger Sponge (Haskell)lflink{https://github.com/phi16/RayMarch}link"><img src="/img/scsh/ram_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/khtt"><img src="/img/scsh/fut_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/unic.png" data-lightbox="scsh" data-title="Deciphering UnitCell (png)lfLifeGameのUnitCellと呼ばれるパターンの動作をまとめてみました。lfこうみるとすごいCPUっぽい。"><img src="/img/scsh/unic_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/erpL"><img src="/img/scsh/disp_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/u36W"><img src="/img/scsh/maz_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="https://github.com/phi16/cpp.hs"><img src="/img/scsh/cpp_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/poi.png" data-lightbox="scsh" data-title="ねるねるねるね (Android Java)lfwonderflで昔つくった「る」に棒を指すだけ版のあとでできてしまった。lf元々ただのネタゲーだったけどかなりの複雑さで普通にゲームになってしまった。lfGooglePlayで配信中！link{https://play.google.com/store/apps/details?id=phi16.neruneru}link">
-                                <img src="/img/scsh/poi_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/pKIy"><img src="/img/scsh/fri_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/h7n1"><img src="/img/scsh/pth_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/wgf9"><img src="/img/scsh/ann_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/twn.png" data-lightbox="scsh" data-title="TypingWar (Browser JavaScript/Node.js)lflink{https://trap.tokyotech.org/products/2015/12/typing-war/}link traPでつくってたもの。私はプログラム担当でした。lfタイピングのパターン作るのは全通り合成したNFAからDFAをちゃんと生成したり。lfゲーム部分はClosure大量に使って綺麗に書いたつもり。他の言語でも似たことしたい。">
-                                <img src="/img/scsh/twn_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="http://wonderfl.net/c/4L2z"><img src="/img/scsh/dev_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/ssit.png" data-lightbox="scsh" data-title="Sunset (GLSL #0)"><img src="/img/scsh/ssit_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/mnds.png" data-lightbox="scsh" data-title="Moon and Sky (GLSL #1)"><img src="/img/scsh/mnds_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/hgli.png" data-lightbox="scsh" data-title="Pixelated Hourglass (GLSL #2)"><img src="/img/scsh/hgli_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="https://github.com/phi16/Lambia"><img src="/img/scsh/lami_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/citm.png" data-lightbox="scsh" data-title="City Maker (GLSL #3)"><img src="/img/scsh/citm_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="https://github.com/phi16/110"><img src="/img/scsh/110_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/teip.png" data-lightbox="scsh" data-title="A Popular Game (GLSL #4)lflink{https://www.shadertoy.com/view/4d33Dj}link"><img src="/img/scsh/teip_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/prif.png" data-lightbox="scsh" data-title="もふもふ (Browser JavaScript)lfrogyゼミでのプレゼンで用いた、「プレゼン用DSL」。lf中身・解説などは link{https://bit.ly/1Q62qol}link にあります。lf汎用化して何かにできたらなぁと思わなくもないです。">
-                                <img src="/img/scsh/prif_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/crys.png" data-lightbox="scsh" data-title="Crystal (GLSL #5)"><img src="/img/scsh/crys_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/revr.png" data-lightbox="scsh" data-title="Revera (Windows Haskell)lfHaskellで久しぶりにゲームをつくりました。lfコンセプトは3ghtと同じで「認識の加速」。lfあとLensをいっぱいつかった。たのしかった。lflink{https://github.com/phi16/Revera}link">
-                                <img src="/img/scsh/revr_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/miyu.png" data-lightbox="scsh" data-title="Miyu : Prism (Browser Haskell → HTML)lf最初はYesodでサーブしてて、その頃はCPUモニタとか内部のbotを叩く機能とかいろいろあった。lf今はそれをやってた物理PCの電源が死んだので残念ながら・・・lfといっても殆ど静的ページだったしgithub.ioも今のところは良いかなって感じ">
-                                <img src="/img/scsh/miyu_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/prgr.png" data-lightbox="scsh" data-title="進捗どうですか？ (Browser JS/ES6)lftraPでつくったもの。詳細は→link{https://bit.ly/28ZCWgX}linklf仕様とかをほぼ完璧に仕上げてからチームで2日で実装。lf全力を出したらとほんとに完成してとても嬉しかった。lflink{http://progress.trapti.tech}link">
-                                <img src="/img/scsh/prgr_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/tsp.png" data-lightbox="scsh" data-title="Handmade TSP (Browser JS)lf某C言語の課題を手でやろうとして作ったもの。lf最初は純粋に手のみでパスを作ろうと思ってたけど気づいたら2-opt機能とかが生えてた。lfアルゴリズムのVisualizerとしての機能は果たしてる感じ。lflink{https://phi16.github.io/Handmade-TSP}link">
-                                <img src="/img/scsh/tsp_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/nen.png" data-lightbox="scsh" data-title="NeonCube (GLSL #6)">
-                                <img src="/img/scsh/nen_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/jla.png" data-lightbox="scsh" data-title="Japanese Lamp (GLSL #7)">
-                                <img src="/img/scsh/jla_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/sspe.png" data-lightbox="scsh" data-title="ShapeSphere (D GLSL)lftraPでつくってたもの。Renderer担当してました。GAME^3で展示したし多分載っけていいよね。lf大体Shadertoyで得てしまった謎テクを大量につっこんで出来たものです。クリスタルに全力を出しすぎた。lfでもやっぱり全体の統一感が無いので精進します＞＜ (このシーンはわざとだけど)">
-                                <img src="/img/scsh/sspe_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/utpd.png" data-lightbox="scsh" data-title="Quilt Untyped (Browser JS)lflink{https://phi16.github.io/Quilt/untyped}linklf圏論のStringDiagramをベースにラムダ計算をVisualizeしたもの。lfこれは階乗を計算するプログラム。UIから評価器まで全部自作です。">
-                                <img src="/img/scsh/utpd_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/flw.png" data-lightbox="scsh" data-title="Quilt Flow (Browser JS)lflink{https://phi16.github.io/Quilt/flow}linklfQuilt Untypedを作ってたら、双対を取ることで命令形プログラミング言語ができることに気づいてしまった。lfこれは迷路を解いたあと最短経路で最初に戻ってくるプログラム。教育向きかも？とか。">
-                                <img src="/img/scsh/flw_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/line.png" data-lightbox="scsh" data-title="Quilt Linear (Browser JS)lflink{https://phi16.github.io/Quilt/linear}linklf元ネタはlink{https://arxiv.org/abs/1405.6881}linkです。lf線形方程式をVisualizeした上でその解空間を計算する。lfGUIの基盤があるので行列らへんの処理を組むだけで出来た。">
-                                <img src="/img/scsh/line_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/rcmt.png" data-lightbox="scsh" data-title="MotionStore (Browser Haskell/Haste)lflink{https://phi16.github.io/MotionStore}linklfスクショ見てもわかんない・・・ 使えそうなモーションを集めておこうと思ったのでつくった。lf段々増える予定。">
-                                <img src="/img/scsh/rcmt_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/rwnd.png" data-lightbox="scsh" data-title="Let's rewind time! (Browser JS)lflink{https://phi16.github.io/Jam/0103}linklf3時間GameJamってことで出来た作品。ドット絵はwhiteonionさんから。lfゴールから、逆に今までの入力を正しく辿って最初の場所まで戻るゲーム。lf3時間でできる限界という感じ。">
-                                <img src="/img/scsh/rwnd_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/encl.png" data-lightbox="scsh" data-title="最小包含円 (Browser GLSL)lflink{https://www.shadertoy.com/view/4lGXDD}linklf3時間GameJam作品。">
-                                <img src="/img/scsh/encl_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/crcu.png" data-lightbox="scsh" data-title="Quilt Circuit (Browser JS)lflink{https://phi16.github.io/Quilt/circuit}linklfまた作っちゃった。基礎集積回路の試験が終わったので腹いせに作ったやつ。lfなんか普通にいろんなことが出来て楽しい。基盤のおかげでぱっと作れて最高って感じ。">
-                                <img src="/img/scsh/crcu_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/mrmv.png" data-lightbox="scsh" data-title="Mirror Move (Browser JS)lflink{https://phi16.github.io/Jam/0213}linklf3時間Jamの作品。鏡で反射して移動するって感じ。lf雰囲気はklockiを参考にした。3時間パズルゲームは考察が足りないので複雑なのを作るのが難しい。">
-                                <img src="/img/scsh/mrmv_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/rign.png" data-lightbox="scsh" data-title="RIGHT ANGLE (Browser JS)lflink{https://phi16.github.io/Jam/0220}linklf3時間GameJam作品。">
-                                <img src="/img/scsh/rign_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/welc.png" data-lightbox="scsh" data-title="traP welcome-17 site (Browser JS)lf新歓ページのヘッダ部分を作りました。このスクショは私の作品の画像だけで動かしたもの。lf一度再帰的タイルレイアウトをやってみたかった。やりたかった動きもちゃんと出来たしなんとかなかった。lfDOM操作がやっぱり重いので諸々反省。">
-                                <img src="/img/scsh/welc_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/fdem.png" data-lightbox="scsh" data-title="Forbidden Drop Estimator (Browser JS)lflink{https://phi16.github.io/Jam/0306}linklf3時間GameJam作品。禁止されたパターンを作らないようにがんばる。lf難しそう、っておもったけど案外簡単、に見えたけど難しいパターンがめちゃくちゃ難しくてゲームバランス調整の難しさを感じた。">
-                                <img src="/img/scsh/fdem_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/lumi.png" data-lightbox="scsh" data-title="Lumin β (Unity C#)lfとあるドマイナーゲーを殆どパクってのんびり作っていたもの。lfキューブが降って来てつなげて連鎖する感じのアクションパズル。lf面白さがまだ出てないので当分お蔵入りになりそう。その内全部作り直します。">
-                                <img src="/img/scsh/lumi_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/dupr.png" data-lightbox="scsh" data-title="双対原理 (Browser JS)lflink{https://phi16.github.io/Jam/0321/}linklf3時間GameJam作品。lf最初はただのVisualizerとして作っていてゲームにはならないなぁと思ってた。lf図形を構成するっていうのを考えるとなかなか難しくてこれはこれでありだなーという感じ。">
-                                <img src="/img/scsh/dupr_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/gcha.png" data-lightbox="scsh" data-title="課金王者ガチャキング (Browser JS)lflink{https://trapti.tech/works/6701}linklftraPで開発していた作品。クライアントプログラム担当としていろいろと頑張りました。lfもともと面白い作品だったので開発のモチベが保てていて本当によかった。まだβなので頑張っていきます。">
-                                <img src="/img/scsh/gcha_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/scvs.png" data-lightbox="scsh" data-title="Ranking-visu (Browser JS, WebGL)lftraP CPCTF用のランキングVisualizer。描画はWebGLとCanvas。lfRayMarchを使っていて、新しい得点が追加されるとぽにょんってなる。lfやりたかった見た目は達成できたし、実運用でもいい感じに動いて好評だったので良かった。">
-                                <img src="/img/scsh/scvs_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/tsag.png" data-lightbox="scsh" data-title="tombi sarais aburage (Browser JS)lflink{https://phi16.github.io/Jam/0504/}linklf3時間GameJam作品。テーマは速度で、一瞬で降りて戻っていくみたいなのが表現したかった。lf最初はちゃんと絵をつけようと思ってたけど絵が描けなかったのでネタに走る。lfこれはこれでいいかなという感じ。">
-                                <img src="/img/scsh/tsag_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/tsut.png" data-lightbox="scsh" data-title="Infinity Tsuta (Browser JS)lflink{https://phi16.github.io/Jam/0611/}linklf3時間GameJam作品。テーマは成長、植物をいい感じに成長させよう、みたいな。lf最初はもっとゲーム性ある感じになる気がしていたけど途中でわかんなくなってしまった。lfグラフィックも凝れなかったしそろそろいつものCanvasライブラリの限界を感じる。">
-                                <img src="/img/scsh/tsut_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/jj3s.png" data-lightbox="scsh" data-title="JJ3S / jj3s-lua (Browser JS, Lua)lflink{https://phi16.github.io/JJ3S}link link{https://kaz.github.io/jj3s-lua}linklf情報実験第三の授業で作ってしまったものです。ミニCPUのシミュレータに、Luaからアセンブリへのコンパイラがくっついたもの。lf見た目とCPUシミュレータ部分は私で、Luaコンパイラはkazさんです。lfちゃんと実機で動くバイナリを吐いてくれる。たのしかった。">
-                                <img src="/img/scsh/jj3s_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/shsw.png" data-lightbox="scsh" data-title="Shooter Swimmer (Browser JS)lflink{https://phi16.github.io/Jam/0817}linklf3時間GameJam作品。といっても作成1.5時間後に大幅アップデートしたけど。lf「夏」をテーマに水鉄砲からのイカです。lf最終的に普通に遊べるゲームになったみたい。うれしい。">
-                                <img src="/img/scsh/shsw_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="float">
-                            <a href="/img/scsh/enfq.png" data-lightbox="scsh" data-title="EIGENFREQ (Browser JS)lflink{https://phi16.github.io/Jam/0828}linklf3時間GameJam作品。テーマは「振動」。lfなんか固有振動数当てて破壊するゲームがあったのでスタイリッシュにした感じ。lfマイク利用だと遊ばれにくいなぁというのを感じたけど、作りたいものは作れた。">
-                                <img src="/img/scsh/enfq_t.png" width="100">
-                            </a>
-                        </div>
-                        <div class="floatEnd"></div>
-                    </div>
-                </div>
-                <div id="widget">
-                    <div id="title">Article</div>
-                    <div class="indent">
-                        <ul>
-                            <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1047298157.html">万物の創造</a> 2015/12/12</li>
-                            <li>[traP] <a href="https://trapti.tech/blog/543/">†光†</a> 2015/12/19</li>
-                            <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1050624657.html">JSでスライドを作るツールを作った話</a> 2016/01/25</li>
-                            <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1053186991.html">ねるねるねるねをつくった</a> 2016/03/02</li>
-                            <li>[qiita] <a href="http://qiita.com/phi16_/items/ef83e610585ac8526d31">Blackhole : 無限再帰停止機構</a> 2016/12/08</li>
-                            <li>[qiita] <a href="http://qiita.com/phi16_/items/49b4c770ab979ecc8f2d">GLSLでテトリスをつくる</a> 2016/12/08</li>
-                            <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1062946674.html">Haskellで始める手続き型プログラミング</a> 2016/12/15</li>
-                            <li>[traP] <a href="https://trapti.tech/blog/4443/">状態遷移と状態の排除</a> 2016/12/20</li>
-                            <li>[traP] <a href="https://trapti.tech/blog/5426/">A primitive higher-order structure</a> 2016/12/28</li>
-                            <li>[traP] <a href="https://trapti.tech/blog/5660/">Combinatorial Easing : 動かし方を分解する</a> 2017/1/11</li>
-                            <li>[traP] <a href="https://trapti.tech/blog/7154/">Co-data</a> 2017/4/24</li>
-                            <li>[チズケ研究会] <a href="https://cheesecake.institute/">チーズケーキ技術 17.08</a> 2017/8/11</li>
-                         </ul>
-                    </div>
-                </div>
-                <div style="height:40px"></div>
-                <div id="footerPad"></div>
-            </div>
+  <div class="container">
+    <div id="main" role="main">
+      <div id="site">
+        <div id="header">
+          <a href="/"><h1>Reprd-World</h1></a>
+          <div id="sideS">by phi16</div>
         </div>
+        <div class="widget">
+          <div class="title">About</div>
+          <div class="indent">
+            <div class="stat"></div>
+            今までの制作物置き場です。楽しいサイトにする予定は無さそう。
+          </div>
+          <div class="title">Profile</div>
+          <div class="indent">
+            <ul>
+              <li>言語作ったりゲーム作ったりしてます。</li>
+              <li>東京工業大学工学部情報工学科3年</li>
+              <ul>
+                <li>型理論とか圏論に興味があります。</li>
+                <li><a href="https://www.rogiken.org">ロボット技術研究会</a></li>
+                <li><a href="https://trapti.tech">デジタル創作同好会traP</a></li>
+              </ul>
+              <li>言語</li>
+              <ul>
+                <li>常用 : Haskell, JavaScript</li>
+                <li>普通 : C++, C, Java, GLSL, ActionScript3, Objective-C, Swift</li>
+                <li>経験有 : sh, Scheme, C#, Agda</li>
+                <li>嫌い : Objective-C, Ruby, PHP, Perl</li>
+              </ul>
+              <li>Email : phi16.256&lt;at&gt;gmail.com</li>
+              <li>Twitter :&nbsp;<a href="https://twitter.com/phi16_">@phi16_</a></li>
+              <li>GitHub :&nbsp;<a href="https://github.com/phi16">phi16</a></li>
+              <li>Steam :&nbsp;<a href="https://steamcommunity.com/id/phi16/">phi16</a></li>
+              <li>Shadertoy : &nbsp;<a href="https://www.shadertoy.com/user/phi16">phi16</a></li>
+              <li>Skype : phi16.</li>
+            </ul>
+            連絡はTwitterが一番早いと思います。
+          </div>
+        </div>
+        <div class="widget">
+          <div class="title">Works</div>
+          <div class="indent" id="works">
+            <div class="stat"></div>
+            メインコンテンツになってしまった
+            <div class="stat"></div>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="title">Article</div>
+          <div class="indent">
+            <ul>
+              <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1047298157.html">万物の創造</a> 2015/12/12</li>
+              <li>[traP] <a href="https://trapti.tech/blog/543/">†光†</a> 2015/12/19</li>
+              <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1050624657.html">JSでスライドを作るツールを作った話</a> 2016/01/25</li>
+              <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1053186991.html">ねるねるねるねをつくった</a> 2016/03/02</li>
+              <li>[qiita] <a href="http://qiita.com/phi16_/items/ef83e610585ac8526d31">Blackhole : 無限再帰停止機構</a> 2016/12/08</li>
+              <li>[qiita] <a href="http://qiita.com/phi16_/items/49b4c770ab979ecc8f2d">GLSLでテトリスをつくる</a> 2016/12/08</li>
+              <li>[rogy] <a href="http://titech-ssr.blog.jp/archives/1062946674.html">Haskellで始める手続き型プログラミング</a> 2016/12/15</li>
+              <li>[traP] <a href="https://trapti.tech/blog/4443/">状態遷移と状態の排除</a> 2016/12/20</li>
+              <li>[traP] <a href="https://trapti.tech/blog/5426/">A primitive higher-order structure</a> 2016/12/28</li>
+              <li>[traP] <a href="https://trapti.tech/blog/5660/">Combinatorial Easing : 動かし方を分解する</a> 2017/1/11</li>
+              <li>[traP] <a href="https://trapti.tech/blog/7154/">Co-data</a> 2017/4/24</li>
+              <li>[チズケ研究会] <a href="https://cheesecake.institute/">チーズケーキ技術 17.08 (ガチャキング製作記・並行性への道)</a> 2017/8/11</li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer"></div>
+      </div>
     </div>
-    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.  chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script><script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script><![endif]-->
+  </div>
+  <script type="text/javascript">
+  $(document).ready(_=>{
+    const cont = $("#works")[0];
+    const data = [
+      {id:"tbl", title:"TurnBlock (Windows BetterC)",desc:"最初のまともなゲーム。シューティングです。\nこの頃から線画好きだった。けどシンプルでいいよね。\nゲーム自体は調整全然できてないけど見た目がきれいなのでいいかなって。"},
+      {id:"pok", title:"Poker (Windows C++)",desc:"線画3Dエンジンが出来たのでポーカーつくった。\nあんまりポーカーに詳しくはないのでAIも全部適当仕様。\n明らかにパース狂ってるのは内緒。ここから四元数大好きになった。"},
+      {id:"grap",title:"KeyboardStringShortCutter (Windows BetterC)",desc:"名前そのまま。好きなショートカットでいつでもランチャーが呼び出せる。\nキーボードのみでいろいろ使いたかったのでつくった。\nAero Glass化は@wx257osn2さんより。"},
+      {id:"spr", ref:"/swf/aSGi/aSGi.swf",title:"Spline Clock (Flash, AS3)",desc:"Wonderfl眺めていたら時計が綺麗だったので自分も作りたくなった。"},
+      {id:"bldn",title:"BlockDown (Linux Haskell)",desc:"Haskellでゲームをつくろうとしてとりあえずアイディアもってきた。\n横5列に同じ色を置くと消える。縦3でも消えるけどスコアが入らない。\n移動は矢印のみ。慣れると簡単になってくるので難易度調整難しい。"},
+      {id:"diff",title:"Diffroma (Android Java)",desc:"Androidで作った最初のゲーム。\n同じような色を線で結ぶと、似ている度に応じて点が入る。\n90%以上でChainがでるのでそれを繋ぎつつけるゲーム。"},
+      {id:"b10q",title:"b10q[ぶろっく] (Android Java)",desc:"テトリスを改造したゲームを作ってたらこうなった。\n隣接する数字が4つ以上つながると消えるけどつながった瞬間には消えない。\nひたすらChainを繋げるゲーム。たのしい。"},
+      {id:"blt", title:"BulletTest (Windows C++)",desc:"ただ単に3D物理演算エンジンBulletを試したかっただけ。\n単なるキューブの他にも机や椅子を出せる。\n元々は学校をゲームにしたかったんだけどめんどくさくて断念。"},
+      {id:"blw", title:"Bowling (Windows C++)",desc:"WiiRemoteを使ったBowling。操作性皆無。\nソルティライチのテクスチャは自作です。4日。\nDirect3D/Bulletを使った初めてのまともなゲーム。"},
+      {id:"msi", title:"Fuwasweeper (Windows C++)",desc:"モーションがふわふわしてるけどその実はただの自動機能搭載マインスイーパ。\n見えるところから推論してできるだけ開けて旗立てる。\nこれは1度クリックしただけの状態です。げーむじゃない。"},
+      {id:"reti",ref:"/swf/lBXR/lBXR.swf",title:"RecursiveTriangles (Flash, AS3)",desc:"ドラッグで三角形を描きます。"},
+      {id:"wvi", title:"Wave (Windows BetterC)",desc:"単なる波シミュ。壁置けたり波源置けたりするだけ。\nでもなぜかバグる。こんなのでバグ生成していいのかわたし。\n一応楽しめるのでそれはそれでよし。"},
+      {id:"rec", title:"Recaller (Windows C++)",desc:"物事って木構造的に考えられることが多いっていうのを思って作った。\n主にメモ用。ちなみにズームとかも勿論自由にできます。\n力学的アルゴリズムがちょっと弱くて綺麗に表示するまで時間がかかる。"},
+      {id:"proc",title:"WireProc (Windows C++)",desc:"グラフィカルなプログラミング言語をつくろうとして試作。\nこれはフィボナッチの生成コード。のはず。自己再帰もできる。\n・・・が、動くところまで実装していない。ついでに仕様もゆれゆれ。"},
+      {id:"spc", title:"IconGen (Processing GLSL)",desc:"RayMarchを知ってとりあえずそれっぽいのを作ってみた結果。\n現在のGithubのアイコンの元でもある。"},
+      {id:"str", title:"Stroke (Android Java)",desc:"ガラケー2タッチに慣れすぎたのでAndroidでもやりたかった。\n分かる人なら分かる。ついでに214とスライドすると「かえ」(=2114)になる。\n両手入力だとすごく速い。バグさえ無ければもっと自信持って紹介できるのだけど。"},
+      {id:"qchi",title:"QromaKey (Windows C++)",desc:"今まで作った中で一番まともなゲーム。\n左下のパレットを回転して背景の色を決めて、同じ色のブロックは当たらなくなる。\nゲーム性もいいとはおもうのだけど7Stageの予定が4までしかできてない。"},
+      {id:"hglu",ref:"/swf/mI1c/mI1c.swf",title:"Hourglass (Flash, AS3)",desc:"かっこよさそうな砂時計を作りたかった。"},
+      {id:"moy", title:"Catan (Windows C++)",desc:"カタンをおうちでやりたかった。もってない。\n大好き線画3D、ぐるぐる動くよ！結構グラフィック綺麗でいい感じ。\nネットワーク周りにバグ多すぎて公開できない。ゲーム終了つくってないし。"},
+      {id:"tesm",title:"Tetris Simulator (Windows C++)",desc:"ただのテトリスのシミュのはずだったんだけど、自分仕様にチューニングした。\nまずNext/Holdは1マスで表示。形を見るのに依存しないように。\nフィールドも小さめで覚えるようにしてみた。けどそんなに成長はしなかった。"},
+      {id:"qtet",ref:"/swf/4LA0/4LA0.swf",title:"Quantum Tetris (Flash, AS3)",desc:"←↓→で移動、ZXで回転、↑でハードドロップ。\n量子ゲームシリーズが面白そうだったので。長々とした解説を昔書いたんだけどどうしような。"},
+      {id:"trig",title:"3ght[とらいと] (Windows C++)",desc:"暇なので1日でつくった。読みはtri-とli-で掛けたつもり。その割には光らないけど。\n矢？が流れてくるから照準の色・的の方向を操作して色を揃える。\nTGM的スピードアップから連想。実際そんな感じになった。"},
+      {id:"preu",title:"Reflei (Android Java)",desc:"WIP。n回の反射で目的地にー、みたいなのをつくろうとした。\n反射計算はRayMarchなのでもっと複雑な形もできます。\nでも任意の関数を距離場化するのがわからなくて放置。"},
+      {id:"moti",ref:"/swf/2PClm/2PClm.swf",title:"Motional Life Game (Flash, AS3)",desc:"ドラッグで反転、Spaceで時間停止、Enterでグライダー銃。\nめっちゃ生物っぽい。グライダーの動きが特に良い。"},
+      {id:"peil",title:"Peano Tile (Haskell) https://github.com/phi16/RayMarch"},
+      {id:"refl",title:"ReflectBlock (Windows C++)",desc:"後輩氏にわかりやすいゲームつくっていっていわれたのでつくった。\n元はもっと単純なのだけど改造結果反射(神経)ゲーム化した。\nエフェクト過多なのは仕様。あくまでサンプルゲーなのです。"},
+      {id:"mpss",title:"MemoryPinball (iOS Objective-C)",desc:"lumosityのメモリーピンボールのクローンつくっただけです。\nお家であそべないしWonderflに移植しようかとも思ったけどめんどかった。\nSpriteのscale弄って線のアニメーションするのがめっちゃ楽だった。"},
+      {id:"ram", title:"Menger Sponge (Haskell) https://github.com/phi16/RayMarch"},
+      {id:"fut", ref:"/swf/khtt/khtt.swf",title:"The Future (Flash, AS3)",desc:"未来が見えるの面白そうだなぁと思って。\n内部実装は物理演算を毎フレームいっぱい回しているだけです。いい効果になった。"},
+      {id:"unic",title:"Deciphering UnitCell (png)",desc:"LifeGameのUnitCellと呼ばれるパターンの動作をまとめてみました。\nこうみるとすごいCPUっぽい。"},
+      {id:"disp",ref:"/swf/erpL/erpL.swf",title:"Dispersion (Flash, AS3)",desc:"雑な光の分散シミュレーション。\n内部から光を入れた時の挙動は間違ってそうだけど気にしないことにする。"},
+      {id:"maz", ref:"/swf/u36W/u36W.swf",title:"Maze Solver (Flash, AS3)",desc:"Enterで表示切り替え、スペースで迷路生成、クリックで始点移動。\n木なので探索がめっちゃ速い。"},
+      {id:"cpp", ref:"https://github.com/phi16/cpp.hs"},
+      {id:"poi", title:"ねるねるねるね (Android Java) https://play.google.com/store/apps/details?id=phi16.neruneru",desc:"wonderflで昔つくった「る」に棒を指すだけ版のあとでできてしまった。\n元々ただのネタゲーだったけどかなりの複雑さで普通にゲームになってしまった。\nGooglePlayで配信中！"},
+      {id:"fri", ref:"/swf/pKIy/pKIy.swf",title:"Fourier Transform (Flash, AS3)",desc:"面白そうな画像を見つけたので。https://twitter.com/Vector_GL/status/612337298064150529\n波形操作以外にもなんとなく数式を書ける機能も付けてしまった。"},
+      {id:"pth", ref:"/swf/h7n1/h7n1.swf",title:"Path Tracing (Flash, AS3)",desc:"よくわからないままに適当に書いたらこうなった。\n多分間違っているのでそのうちリベンジします。"},
+      {id:"ann", ref:"/swf/wgf9/wgf9.swf",title:"Simulated Annealing (Flash, AS3)",desc:"間にいい感じのスキマができるように自動配置する。\nそれっぽく書いたらそれっぽく動いたのでいいんじゃないでしょうか。"},
+      {id:"twn", title:"TypingWar (Browser JavaScript/Node.js) http://typingwar.trap.games/",desc:"traPでつくってたもの。私はプログラム担当でした。\nタイピングのパターン作るのは全通り合成したNFAからDFAをちゃんと生成したり。\nゲーム部分はClosure大量に使って綺麗に書いたつもり。他の言語でも似たことしたい。"},
+      {id:"dev", ref:"/swf/4L2z/4L2z.swf",title:"Distinct Developments (Flash, AS3)",desc:"クリック・クリック長押しで操作。連続して11種類の展開図を全て作ればクリア。\nそこそこ難しいしそこそこ面白い感じある。"},
+      {id:"ssit",title:"Sunset (GLSL #0) https://www.shadertoy.com/view/XtSXzd"},
+      {id:"mnds",title:"Moon and Sky (GLSL #1) https://www.shadertoy.com/view/llBXDG"},
+      {id:"hgli",title:"Pixelated Hourglass (GLSL #2) https://www.shadertoy.com/view/llBSD3"},
+      {id:"lami",ref:"https://github.com/phi16/Lambia"},
+      {id:"citm",title:"City Maker (GLSL #3) https://www.shadertoy.com/view/lscGz2"},
+      {id:"110", ref:"https://github.com/phi16/110"},
+      {id:"teip",title:"A Popular Game (GLSL #4) https://www.shadertoy.com/view/4d33Dj"},
+      {id:"prif",title:"もふもふ (Browser JavaScript)",desc:"rogyゼミでのプレゼンで用いた、「プレゼン用DSL」。\n中身・解説などは  https://bit.ly/1Q62qol にあります。\n汎用化して何かにできたらなぁと思わなくもないです。"},
+      {id:"crys",title:"Crystal (GLSL #5) https://www.shadertoy.com/view/MdV3RW"},
+      {id:"revr",title:"Revera (Windows Haskell)",desc:"Haskellで久しぶりにゲームをつくりました。\nコンセプトは3ghtと同じで「認識の加速」。\nあとLensをいっぱいつかった。たのしかった。\n https://github.com/phi16/Revera"},
+      {id:"miyu",title:"Miyu : Prism (Browser Haskell → HTML)",desc:"最初はYesodでサーブしてて、その頃はCPUモニタとか内部のbotを叩く機能とかいろいろあった。\n今はそれをやってた物理PCの電源が死んだので残念ながら・・・\nといっても殆ど静的ページだったしgithub.ioも今のところは良いかなって感じ"},
+      {id:"prgr",title:"進捗どうですか？ (Browser JS/ES6) http://progress.trapti.tech",desc:"traPでつくったもの。詳細は → https://bit.ly/28ZCWgX\n仕様とかをほぼ完璧に仕上げてからチームで2日で実装。\n全力を出したらとほんとに完成してとても嬉しかった。"},
+      {id:"tsp", title:"Handmade TSP (Browser JS) https://phi16.github.io/Handmade-TSP",desc:"某C言語の課題を手でやろうとして作ったもの。\n最初は純粋に手のみでパスを作ろうと思ってたけど気づいたら2-opt機能とかが生えてた。\nアルゴリズムのVisualizerとしての機能は果たしてる感じ。"},
+      {id:"nen", title:"NeonCube (GLSL #6) https://www.shadertoy.com/view/XtdGRs"},
+      {id:"jla", title:"Japanese Lamp (GLSL #7) https://www.shadertoy.com/view/Xlc3W2"},
+      {id:"sspe",title:"ShapeSphere (D GLSL)",desc:"traPでつくってたもの。Renderer担当してました。GAME^3で展示したし多分載っけていいよね。\n大体Shadertoyで得てしまった謎テクを大量につっこんで出来たものです。クリスタルに全力を出しすぎた。\nでもやっぱり全体の統一感が無いので精進します＞＜ (このシーンはわざとだけど)"},
+      {id:"utpd",title:"Quilt Untyped (Browser JS) https://phi16.github.io/Quilt/untyped",desc:"圏論のStringDiagramをベースにラムダ計算をVisualizeしたもの。\nこれは階乗を計算するプログラム。UIから評価器まで全部自作です。"},
+      {id:"flw", title:"Quilt Flow (Browser JS) https://phi16.github.io/Quilt/flow",desc:"Quilt Untypedを作ってたら、双対を取ることで命令形プログラミング言語ができることに気づいてしまった。\nこれは迷路を解いたあと最短経路で最初に戻ってくるプログラム。教育向きかも？とか。"},
+      {id:"line",title:"Quilt Linear (Browser JS) https://phi16.github.io/Quilt/linear",desc:"元ネタは https://arxiv.org/abs/1405.6881です。\n線形方程式をVisualizeした上でその解空間を計算する。\nGUIの基盤があるので行列らへんの処理を組むだけで出来た。"},
+      {id:"rcmt",title:"MotionStore (Browser Haskell/Haste) https://phi16.github.io/MotionStore",desc:"スクショ見てもわかんない・・・ 使えそうなモーションを集めておこうと思ったのでつくった。\n段々増える予定。"},
+      {id:"rwnd",title:"Let's rewind time! (Browser JS) https://phi16.github.io/Jam/0103",desc:"3時間GameJamってことで出来た作品。ドット絵はwhiteonionさんから。\nゴールから、逆に今までの入力を正しく辿って最初の場所まで戻るゲーム。\n3時間でできる限界という感じ。"},
+      {id:"encl",title:"最小包含円 (Browser GLSL) https://www.shadertoy.com/view/4lGXDD",desc:"3時間GameJam作品。"},
+      {id:"crcu",title:"Quilt Circuit (Browser JS) https://phi16.github.io/Quilt/circuit",desc:"また作っちゃった。基礎集積回路の試験が終わったので腹いせに作ったやつ。\nなんか普通にいろんなことが出来て楽しい。基盤のおかげでぱっと作れて最高って感じ。"},
+      {id:"mrmv",title:"Mirror Move (Browser JS) https://phi16.github.io/Jam/0213",desc:"3時間Jamの作品。鏡で反射して移動するって感じ。\n雰囲気はklockiを参考にした。3時間パズルゲームは考察が足りないので複雑なのを作るのが難しい。"},
+      {id:"rign",title:"RIGHT ANGLE (Browser JS) https://phi16.github.io/Jam/0220",desc:"3時間GameJam作品。"},
+      {id:"welc",title:"traP welcome-17 site (Browser JS)",desc:"新歓ページのヘッダ部分を作りました。このスクショは私の作品の画像だけで動かしたもの。\n一度再帰的タイルレイアウトをやってみたかった。やりたかった動きもちゃんと出来たしなんとかなかった。\nDOM操作がやっぱり重いので諸々反省。"},
+      {id:"fdem",title:"Forbidden Drop Estimator (Browser JS) https://phi16.github.io/Jam/0306",desc:"3時間GameJam作品。禁止されたパターンを作らないようにがんばる。\n難しそう、っておもったけど案外簡単、に見えたけど難しいパターンがめちゃくちゃ難しくてゲームバランス調整の難しさを感じた。"},
+      {id:"lumi",title:"Lumin β (Unity C#)",desc:"とあるドマイナーゲーを殆どパクってのんびり作っていたもの。\nキューブが降って来てつなげて連鎖する感じのアクションパズル。\n面白さがまだ出てないので当分お蔵入りになりそう。その内全部作り直します。"},
+      {id:"dupr",title:"双対原理 (Browser JS) https://phi16.github.io/Jam/0321/",desc:"3時間GameJam作品。テーマは「相反するもの」。\n最初はただのVisualizerとして作っていてゲームにはならないなぁと思ってた。\n図形を構成するっていうのを考えるとなかなか難しくてこれはこれでありだなーという感じ。"},
+      {id:"gcha",title:"課金王者ガチャキング (Browser JS) https://trapti.tech/works/6701",desc:"traPで開発していた作品。クライアントプログラム担当としていろいろと頑張りました。\nもともと面白い作品だったので開発のモチベが保てていて本当によかった。まだβなので頑張っていきます。"},
+      {id:"scvs",title:"Ranking-visu (Browser JS, WebGL)",desc:"traP CPCTF用のランキングVisualizer。描画はWebGLとCanvas。\nRayMarchを使っていて、新しい得点が追加されるとぽにょんってなる。\nやりたかった見た目は達成できたし、実運用でもいい感じに動いて好評だったので良かった。"},
+      {id:"tsag",title:"tombi sarais aburage (Browser JS) https://phi16.github.io/Jam/0504/",desc:"3時間GameJam作品。テーマは速度で、一瞬で降りて戻っていくみたいなのが表現したかった。\n最初はちゃんと絵をつけようと思ってたけど絵が描けなかったのでネタに走る。\nこれはこれでいいかなという感じ。"},
+      {id:"tsut",title:"Infinity Tsuta (Browser JS) https://phi16.github.io/Jam/0611/",desc:"3時間GameJam作品。テーマは成長、植物をいい感じに成長させよう、みたいな。\n最初はもっとゲーム性ある感じになる気がしていたけど途中でわかんなくなってしまった。\nグラフィックも凝れなかったしそろそろいつものCanvasライブラリの限界を感じる。"},
+      {id:"jj3s",title:"JJ3S / jj3s-lua (Browser JS, Lua) https://phi16.github.io/JJ3S https://kaz.github.io/jj3s-lua",desc:"情報実験第三の授業で作ってしまったものです。ミニCPUのシミュレータに、Luaコンパイラがくっついたもの。\n見た目とCPUシミュレータ部分は私で、Luaコンパイラはkazさんです。\nちゃんと実機で動くバイナリを吐いてくれる。たのしかった。"},
+      {id:"shsw",title:"Shooter Swimmer (Browser JS) https://phi16.github.io/Jam/0817",desc:"3時間GameJam作品。といっても作成1.5時間後に大幅アップデートしたけど。\n「夏」をテーマに水鉄砲からのイカです。\n最終的に普通に遊べるゲームになったみたい。うれしい。"},
+      {id:"enfq",title:"EIGENFREQ (Browser JS) https://phi16.github.io/Jam/0828",desc:"3時間GameJam作品。テーマは「振動」。\nなんか固有振動数当てて破壊するゲームがあったのでスタイリッシュにした感じ。\nマイク利用だと遊ばれにくいなぁというのを感じたけど、作りたいものは作れた。"},
+    ];
+    data.forEach(d=>{
+      const div = document.createElement("div");
+      div.className = "float";
+      const a = document.createElement("a");
+      if(d.title){
+        a.className = "item";
+        a.rel = "item";
+        if(d.desc){
+          a["title"] = d.title + "\n" + d.desc;
+        }else{
+          a["title"] = d.title;
+        }
+      }
+      a.href = d.ref ? d.ref : "/img/scsh/" + d.id + ".png";
+      const img = document.createElement("img");
+      img.src = "/img/scsh/" + d.id + "_t.png";
+      img.width = "100";
+      a.appendChild(img);
+      div.appendChild(a);
+      cont.appendChild(div);
+    });
+    const end = document.createElement("div");
+    end.className = "floatEnd";
+    cont.appendChild(end);
+    $("a.item").fancybox({
+      width:465,
+      height:465,
+      titlePosition: 'inside'
+    });
+  });
+  </script>
 </body>
 
 </html>

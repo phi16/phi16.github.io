@@ -1,0 +1,10 @@
+SplineClock
+
+Catmull-Romスプライン曲線で丸を動かして時計作った。
+参考→http://l00oo.oo00l.com/blog/archives/category/actionscript
+
+最初は普通のスプライン曲線でやろうとおもってたけどめんどくさすぎたので調べてたらみつけた
+
+スプライン曲線の一種らしいので名前はSplineにしといたけど
+
+はっきり言ってCatmull-Rom使う意味がなかった気がする

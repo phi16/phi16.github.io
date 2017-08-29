@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+    background: #333333;
+    color: #cccccc;
+    overflow: auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+    min-width: 650px
+    padding: 0;
+    margin: 0;
+}
+#site {
+    font-family: 'Open Sans', 'メイリオ', 'ヒラギノ角ゴ ProN W3', 'Droid Sans Japanese'
+}
+b {
+    font-family: 'Open Sans', 'メイリオ', 'ヒラギノ角ゴ ProN W3', 'Droid Sans Japanese'
+}
+#header {
+    font-family: 'Berkshire Swash';
+    width: 100%;
+    color: #ccc;
+    box-shadow: 0 0 10px #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1 {
+    display: inline;
+    font-size: 60px;
+    margin-left: 30px;
+    color: #eee;
+}
+.title {
+    width: 100%;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: -10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #fff
+}
+h2 {
+    margin-bottom: 10px
+}
+#sideS {
+    font-size: 32px;
+    display: inline
+}
+ul {
+    margin-left: 10px;
+    padding-left: 10px
+}
+.widget {
+    padding-left: 30px;
+    padding-top: 1px;
+}
+a {
+    text-decoration: none
+}
+a:link {
+    color: #79f
+}
+a:visited {
+    color: #f7f
+}
+a:active {
+    color: #fff
+}
+a:hover {
+    color: #fff
+}
+.stat {
+    height: 15px
+}
+.indent {
+    margin-left: 5px;
+    line-height: 30px
+}
+li {
+    margin-left: -6px
+}
+li.list {
+    margin-left: -12px
+}
+.float {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    box-shadow: 0 0 5px #000;
+}
+.floatEnd {
+    clear: left
+}
+#footer {
+    height: 40px;
+    width: 100%;
+    box-shadow: 0 0 10px #000;
+}
+#fancybox-title {
+    font-family: 'Open Sans', 'メイリオ', 'ヒラギノ角ゴ ProN W3', 'Droid Sans Japanese';
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+}

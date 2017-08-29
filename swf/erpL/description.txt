@@ -1,0 +1,8 @@
+Dispersion
+
+もっときれいなのちゃんとつくりたいけどなかなか難しそうで
+
+Refractive index from http://refractiveindex.info/?shelf=glass&book=BK7&page=SCHOTT
+
+最初加算合成わからなかったからどうしようとか書いて寝てたらForkされて出来あがられてしまった :p
+逆引したとかじゃなくてForkみてなかったのです(

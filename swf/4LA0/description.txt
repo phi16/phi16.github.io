@@ -1,0 +1,7 @@
+Quantum Tetris
+
+※Hard drop is danger! your browser may halt!
+States will collapse to have highest score and live longest.
+When one state cannot fall down (without hard drop) but other state can, states will collapse to the latter at next time.
+←↓↑→ＺＸ
+description(in Japanese) : http://miyus.dip.jp/wonderfl/qtetris
