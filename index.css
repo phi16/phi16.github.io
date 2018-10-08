@@ -39,6 +39,11 @@ h1 {
     padding-left: 10px;
     border-bottom: 1px solid #fff
 }
+.subtitle {
+    font-size: 20px;
+    margin-left: -5px;
+    margin-bottom: -5px;
+}
 h2 {
     margin-bottom: 10px
 }
