@@ -51,6 +51,7 @@ h2 {
     font-size: 32px;
     display: inline;
     margin-left: 7px;
+    white-space: nowrap;
 }
 ul {
     margin-left: 10px;
@@ -88,15 +89,13 @@ li {
 li.list {
     margin-left: -12px
 }
-.float {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 2px;
+.elem {
+    position: absolute;
     box-shadow: 0 0 5px #000;
 }
-.floatEnd {
-    clear: left
+#elems {
+    position: relative;
+    margin-top: 20px;
 }
 #footer {
     height: 40px;
