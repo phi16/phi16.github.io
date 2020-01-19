@@ -18,6 +18,42 @@
   <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
   <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="/index.css">
+  <style>
+
+.pe {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.pi {
+  width: 580px;
+  text-align: right;
+}
+.pe img {
+  margin-right: 15px;
+}
+img, .pn {
+  border: 4px solid #ddd;
+  border-radius: 3px;
+}
+.pn {
+  width: 560px;
+}
+.ptt {
+  margin-top: 10px;
+}
+.pt {
+  font-size: 30px;
+}
+.pd {
+  margin-top: -5px;
+  line-height: 40px;
+}
+.pc {
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+  </style>
 </head>
 
 <body>
@@ -32,7 +68,7 @@
           <div class="title">Works</div>
           <div class="indent" id="works">
             <div class="stat"></div>
-            <div id="elems"></div>
+            <div id="pelems"></div>
           </div>
         </div>
         <div class="widget">
@@ -42,11 +78,16 @@
             対外的な活動
             <ul>
               <li>
-                <a href="http://xrarchi.org/vraa1/">VR Architecture Award 01</a> モスコミュール賞<br>
+                2019/08/18 <a href="http://xrarchi.org/vraa1/">VR Architecture Award 01</a> 提出作品 「お絵かきと対話」 <br>
+                <a href="http://xrarchi.org/vraa1/worklist/">モスコミュール賞を頂きました。</a><br>
+                <img src="/img/scsh/cwyf.png" height="315">
               </li>
               <li>
-                <a href="https://neort.io/story/helloneoshibuya">NEORT</a>さんより 渋谷駅地下で展示<br>
+                2019/11/01 <a href="https://neort.io/story/helloneoshibuya">NEORT</a>さんより 渋谷駅地下で展示「Japanese Pattern」<br>
                 <a href="https://twitter.com/phi16_/status/1190487389132607494">バーチャル浴衣柄を置かせて頂きました。</a>
+                <div class="pn">
+                  <iframe height="315" style="max-width: 560px; width: 100%; overflow:hidden; display:block;" src="https://neort.io/embed/bl4rkmk3p9fafudebh3g" frameborder="0" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts" allow="geolocation; microphone; camera; midi; vr" allowfullscreen="true" allowtransparency="true"></iframe>
+                </div>
               </li>
             </ul>
           </div>
@@ -58,110 +99,52 @@
   <script type="text/javascript">
   $(document).ready(_=>{
     const data = [
-      {id:"moy",title:"Catan (Windows C++)",desc:"カタンをおうちでやりたかった。もってない。\n大好き線画3D、ぐるぐる動くよ！結構グラフィック綺麗でいい感じ。\nネットワーク周りにバグ多すぎて公開できない。ゲーム終了つくってないし。"},
-      {id:"poi", title:"ねるねるねるね (Android Java) https://play.google.com/store/apps/details?id=phi16.neruneru",desc:"wonderflで昔つくった「る」に棒を指すだけ版のあとでできてしまった。\n元々ただのネタゲーだったけどかなりの複雑さで普通にゲームになってしまった。\nGooglePlayで配信中！"},
-      {id:"utpd",title:"Quilt Untyped (Browser JS) https://phi16.github.io/Quilt/untyped",desc:"圏論のStringDiagramをベースにラムダ計算をVisualizeしたもの。\nこれは階乗を計算するプログラム。UIから評価器まで全部自作です。"},
-      {id:"gcha",title:"課金王者ガチャキング (Browser JS) https://trap.jp/post/183/",desc:"traPで開発していた作品。クライアントプログラム担当としていろいろと頑張りました。\nもともと面白い作品だったので開発のモチベが保てていて本当によかった。まだβなので頑張っていきます。"},
-      {id:"mani",title:"Manifold (Browser Haskell/Haste, JS) https://phi16.github.io/Manifold",desc:"Toriの方式だと本当の射影空間が作れないので真面目に作り直した。\n結果距離関数で定義できる表面なら物理演算ができるというものができた。\nトーラス上の計量の違いみたいなのも表現できて楽しい。"},
-      {id:"rnca",title:"Runica (Android, Kotlin)",desc:"Android用キーボード。Strokeの後継。\n元々は2タッチ準拠だったけど入力速度を上げるために配置をごちゃまぜにした。\n少なくとも前よりは速い。\nいろいろ直したいところがあるのでそのうち新しいのを作る。"},
-      {id:"vcpk",title:"Vacuous Park (Unity, VRChat)",desc:"GPUパーティクルだけで出来た「虚無の遊園地」。\n観覧車は元々は盆踊りの為に作った物(それもまた奇妙だけど)で、折角なので乗れるようにもした。\n遠景はArea Xリスペクトで作ってみたらめちゃくちゃ綺麗になった。"},
-      {id:"stir",title:"Stair Hall (Unity, VRChat) https://twitter.com/i/moments/1113143458682642432",desc:"無限回廊と箒のあるワールド。こういう風景をずっと見たいと思っていた。\n色んな問題に直面しつつもなんとか解決を見つけていって。すごいいい感じになりました。\n思い通りの空間が作れて満足です。飛ぶのめちゃくちゃたのしい。ちなみに写っているのはますきゃっとちゃんです。かわいい。"},
-      {id:"do06",title:"D:0629 (Unity, VRChat) https://twitter.com/phi16_/status/1145993735705993223",desc:"某所での某の為に作ったもの。端的に言えばパーティクルコントローラ。\n音に合わせたり合わせなかったり、思った動きが出来るように諸々考えてUIを作った。\nでもそのポテンシャルが私の制御範囲を越えてしまっていてとても良い。またやっていきたい。"}
+      {n:"poi", t:"ねるねるねるね", d:"2016/02/29 Minimal Game<br>Java / Android / [[Google Play||https://play.google.com/store/apps/details?id=phi16.neruneru]]",c:
+        "「る」に棒を突き刺して「ね」にするゲーム。"
+      },
+      {n:"utpd", t:"Quilt Untyped", d:"2016/10/06 Language<br>JavaScript / Canvas / [[App||http://phi16.github.io/Quilt/]]",c:
+        "型無しラムダ計算が表現できるプログラミング言語環境。"
+      },
+      {n:"gcha", t:"課金王者ガチャキング", d:"2017/04/07 Online Board Game<br>JavaScript / Canvas / [[App||http://gachaking.trap.games/]]",c:
+        "ガチャを引いて満足しきるまでを競うボードゲーム。<br>7人ほどのチームで開発、クライアントサイドプログラマとして参加。"
+      },
+      {n:"rnca", t:"Runica", d:"2018/07/26 Input Method<br>Kotlin / Android",c:
+        "2-タッチ入力を改造し続けた結果出来た入力メソッド。"
+      },
+      {n:"vcpk", t:"Vacuous Park", d:"2018/08/23 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_465649aa-d1da-49ff-b90c-456187a1c54e]]",c:
+        "パーティクルのみで出来た観覧車のあるワールド。"
+      },
+      {n:"stir", t:"Stair Hall", d:"2019/05/04 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_e2bfb0e6-7f12-4e63-b44a-4a22078596ce]] / [[Video||https://twitter.com/phi16_/status/1124367556901392384]] / [[Making||https://phi16.booth.pm/items/1456068]]",c:
+        "無限に広がる階段を彷徨えるワールド。"
+      },
+      {n:"do06", t:"D:0629", d:"2019/06/29 VR UI<br>Unity / VRChat / [[Video||https://twitter.com/phi16_/status/1145993735705993223]]",c:
+        "リアルタイムパーティクル演出のための専用UI。"
+      }
     ];
-    const cont = $("#elems")[0];
+    const cont = $("#pelems")[0];
     const elems = [];
-    let numSum = 0;
     data.forEach(d=>{
-      const div = document.createElement("div");
-      div.className = "elem";
-      div.style.width = div.style.height = "100px";
-      const a = document.createElement("a");
-      if(d.title){
-        a.className = "item";
-        a.rel = "item";
-        if(d.desc){
-          a["title"] = d.title + "\n" + d.desc;
-        }else{
-          a["title"] = d.title;
-        }
-      }
-      a.href = d.ref ? d.ref : "/img/scsh/" + d.id + ".png";
+      const pe = document.createElement("div"); pe.className = "pe";
+      const pi = document.createElement("div"); pi.className = "pi";
+      const ptt = document.createElement("div"); ptt.className = "ptt";
+      const pt = document.createElement("div"); pt.className = "pt";
+      const pd = document.createElement("div"); pd.className = "pd";
+      const pc = document.createElement("div"); pc.className = "pc";
       const img = document.createElement("img");
-      img.src = "/img/scsh/" + d.id + "_t.png";
-      img.width = "100";
-      a.appendChild(img);
-      div.appendChild(a);
-      cont.appendChild(div);
-      elems.push({s:d.size?d.size:1,p:(x,y,s)=>{
-       div.style.left = x + "px";
-       div.style.top = y + "px";
-       div.style.width = div.style.height = s + "px";
-       img.width = s;
-      }});
-      numSum += d.size ? d.size * d.size : 1;
+      img.src = "/img/scsh/" + d.n + ".png";
+      img.height = "315";
+      pi.appendChild(img);
+      pe.appendChild(pi);
+      pt.textContent = d.t;
+      ptt.appendChild(pt);
+      pd.innerHTML = d.d.replace(/\[\[(.*?)\|\|(.*?)\]\]/g, "<a href=\"$2\">$1</a>");
+      ptt.appendChild(pd);
+      pc.innerHTML = d.c.replace(/\[\[(.*?)\|\|(.*?)\]\]/g, "<a href=\"$2\">$1</a>");
+      ptt.appendChild(pc);
+      pe.appendChild(ptt);
+      cont.appendChild(pe);
     });
-    $("a.item").fancybox({
-      width:465,
-      height:465,
-      titlePosition: 'inside'
-    });
-    function resize() {
-      let rightPad = 40;
-      let measureW = cont.clientWidth - rightPad;
-      let pad = 4;
-      let maxW = Math.max(Math.floor((measureW+pad)/(100+pad)),1);
-      let maxH = Math.ceil(numSum / maxW);
-      let unit = Math.max((measureW+pad) / maxW, 104);
-      let array = [];
-      for(let i=0;i<maxH+2;i++) {
-        let a = [];
-        for(let j=0;j<maxW;j++) {
-          a.push(false);
-        }
-        array.push(a);
-      }
-      function safe(x,y,s) {
-        for(let i=0;i<s;i++) {
-          if(y+i >= maxH+1) return false;
-          for(let j=0;j<s;j++) {
-            if(x+j >= maxW) return false;
-            if(array[y+i][x+j]) return false;
-          }
-        }
-        return true;
-      }
-      function fill(x,y,s) {
-        for(let i=0;i<s;i++) {
-          for(let j=0;j<s;j++) {
-            array[y+j][x+i] = true;
-          }
-        }
-        return true;
-      }
-      let curX = 0, curY = 0, bottom = 0;
-      elems.forEach(e=>{
-        let s = location.hash === "#unit" || maxW == 1 ? 1 : e.s;
-        let cx = curX, cy = curY;
-        while(!safe(cx,cy,s)) {
-          cx++;
-          if(cx == maxW) cx = 0, cy++;
-        }
-        fill(cx,cy,s);
-        bottom = Math.max(bottom, cy+s);
-        let px = cx*unit, py = cy*unit;
-        let sz = unit*s - pad;
-        e.p(px,py,sz);
-        while(array[curY][curX]) {
-          curX++;
-          if(curX == maxW) curX = 0, curY++;
-        }
-      });
-      cont.style.height = unit*bottom + "px";
-    }
-    resize();
-    window.addEventListener("resize",resize);
   });
   </script>
 </body>
-
 </html>
