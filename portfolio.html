@@ -151,10 +151,11 @@ img, .pn {
 頻度の高いものを優先的に配置したため学習コストは掛かるものの実用十分な速度が出ている。<br>
 現在は一部の文字の入力ができないため、もう一つの自作入力メソッドを併用して運用している。
       `},
-      /*{n:"vcpk", t:"Vacuous Park", d:"2018/08/23 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_465649aa-d1da-49ff-b90c-456187a1c54e]]",c:`
+      {n:"vcpk", t:"Vacuous Park", d:"2018/08/23 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_465649aa-d1da-49ff-b90c-456187a1c54e]]",c:`
 パーティクルのみで出来た観覧車のあるワールド。<br>
-シェーダという表現方法を得た後に様々な遭遇を経て偶然完成したもの。<br>
-      `},*/
+頂点シェーダという表現方法を得た後に様々な遭遇を経て偶然完成したもの。<br>
+遠くから観たときの荘厳さと、上から眺めたときの遠景の輝きが気に入っている。
+      `},
       {n:"stir2", t:"Stair Hall", d:"2019/05/04 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_e2bfb0e6-7f12-4e63-b44a-4a22078596ce]] / [[Video||https://twitter.com/phi16_/status/1124367556901392384]] / [[Making||https://phi16.booth.pm/items/1456068]]",c:`
 無限に広がる階段を彷徨えるワールド。<br>
 階段の組み合わせの設計から始まりモデリング及び無限表示の実装や高速化を行った。<br>
@@ -164,7 +165,8 @@ img, .pn {
 リアルタイムパーティクル演出のための専用UI。<br>
 文字のような大量のパーティクルの生成・移動・スタイルなどを操作できる。<br>
 表現したいパーティクルの動きを分解してUIとして再構成した結果として完成した。<br>
-「手動オーディオヴィジュアライザ」としての働きは十分達成していた。
+「手動オーディオヴィジュアライザ」としての働きは十分達成していた。<br>
+なおVRChat上で動作させる為、全ての機構がシェーダで実装されている。
       `}
     ];
     const cont = $("#pelems")[0];
