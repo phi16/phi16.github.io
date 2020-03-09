@@ -60,17 +60,37 @@ img, .pn {
   <div class="container">
     <div id="main" role="main">
       <div id="site">
-        <div id="header">
-          <a href="/"><h1>phi16</h1></a>
-          <div id="sideS">/ portfolio</div>
+        <div class="widget">
+          <div class="title">Profile</div>
+          <div class="indent">
+            <div class="stat"></div>
+            <ul>
+              <li>東京工業大学大学院 情報理工学院 情報工学系 修士一年</li>
+              <li>phi16 という名前で主としてインターネット上で活動しています。</li>
+              <ul>
+                <li>Twitter: &nbsp;<a href="https://twitter.com/phi16_">@phi16_</a></li>
+                <li>GitHub :&nbsp;<a href="https://github.com/phi16">phi16</a></li>
+                <li>NEORT :&nbsp;<a href="https://neort.io/0krLXVos1jXjruhG0yZRj8zor7D2">phi16</a></li>
+              </ul>
+              <li>趣味として個人でヴィジュアル作品などを制作しています。</li>
+              <li>大学のサークル (<a href="https://trap.jp/">デジタル創作同好会traP</a>) ではチームでゲーム制作を行っていました。</li>
+              <li>ここ2年はあるVRSNS (<a href="https://vrchat.com/">VRChat</a>) に常駐しつつ友人などとVR空間での表現を追究しています。</li>
+              <li>言語 / 環境</li>
+              <ul>
+                <li>実務(アルバイト): C++, UE4BP, HLSL / GLSL, OpenGL, JavaScript</li>
+                <li>他メイン利用: Haskell, Unity</li>
+                <li>その他: C#, Java, Kotlin, Agda, 他</li>
+              </ul>
+            </ul>
+          </div>
         </div>
         <div class="widget">
           <div class="title">Interest</div>
           <div class="indent">
             <div class="stat"></div>
-            「良い言語」についての興味から型理論や圏論など。<br>
+            「良い言語」についての興味から型理論や圏論など (大学での研究分野はこちら側)。<br>
             「良い表現」についての興味からレンダリングやシェーダなど。<br>
-            趣味として作りたいと思ったものを作っています。
+            またそれらを最大限活用するためのインタラクションやデザインなどに興味を持っています。<br>
             <ul>
               <li>「可能性」</li>
               <ul>
@@ -80,19 +100,12 @@ img, .pn {
               </ul>
               <li>「正しさ」</li>
               <ul>
-                <li>棲むべき世界における表現</li>
+                <li>モノの棲むべき世界における表現</li>
                 <li>歴史から離れた最適解</li>
                 <li>適合できうる限界のインタフェース</li>
               </ul>
-              <li>表現手段は色々と。</li>
-              <ul>
-                <li>GitHub :&nbsp;<a href="https://github.com/phi16/">phi16</a></li>
-                <li>NEORT :&nbsp;<a href="https://neort.io/0krLXVos1jXjruhG0yZRj8zor7D2">phi16</a></li>
-                <li>Shadertoy : &nbsp;<a href="https://www.shadertoy.com/user/phi16">phi16</a></li>
-                <li>Qiita : &nbsp;<a href="https://qiita.com/phi16_">phi16_</a></li>
-                <li>Haskell, JavaScript (ES6), C++, GLSL / HLSL</li>
-              </ul>
             </ul>
+            見たいと思ったものを作っています。
           </div>
         </div>
         <div class="widget">
@@ -111,7 +124,7 @@ img, .pn {
               <li>
                 2019/08/18 VR Space<br>
                 <a href="http://xrarchi.org/vraa1/">VR Architecture Award 01</a> 提出作品 「お絵かきと対話」 <a href="http://xrarchi.org/vraa1/worklist/">モスコミュール賞を頂きました。</a><br>
-                自分の描いた絵に対して、擬似的に立体感をつける「異なる存在」が居る世界を作りました。<br>
+                自身の描いた絵に対して、擬似的に立体感をつける「異なる存在」が居る世界を作りました。<br>
                 <img src="/img/scsh/cwyf.png" height="315">
               </li>
               <li>
@@ -132,7 +145,7 @@ img, .pn {
   <script type="text/javascript">
   $(document).ready(_=>{
     const data = [
-      {n:"poi", t:"ねるねるねるね", d:"2016/02/29 Minimal Game<br>Java / Android / [[Google Play||https://play.google.com/store/apps/details?id=phi16.neruneru]]",c:`
+      /*{n:"poi", t:"ねるねるねるね", d:"2016/02/29 Minimal Game<br>Java / Android / [[Google Play||https://play.google.com/store/apps/details?id=phi16.neruneru]]",c:`
 「る」に棒を突き刺して「ね」にするゲーム。<br>
 ステージが進行するごとに登場する文字が増え、作業の効率化を追求せざるを得なくなる。<br>
 逆に言えば状況を整理することで脳の負荷を圧倒的に抑えることができるようになっている。<br>
@@ -143,19 +156,19 @@ img, .pn {
 ラムダ抽象のお絵かき上での表現に惹かれて実装したもので、再帰呼び出しなども可能。<br>
 設計不足もあって表現しきれなかった部分があるのでまた作りたい。<br>
 タイル型UI部分から自作。ランタイムを弄ることで異なる言語を表現したものもある。<br>
-      `},
+      `},*/
       {n:"gcha", t:"課金王者ガチャキング", d:"2017/04/07 Online Board Game<br>JavaScript / Canvas / [[App||http://gachaking.trap.games/]]",c:`
 ガチャを引いて満足しきるまでを競うボードゲーム。<br>
 7人ほどのチームで開発、クライアントサイドプログラマとして参加。<br>
-描画自体の他にも、アニメーションやゲームの流れなどを記述するための機構を実装した。
+描画や主処理の他にも、アニメーションやゲームの流れなどを記述するための機構を実装した。
       `},
-      {n:"mani", t:"Manifold", d:"2017/10/05 Simulation Visualization<br>JavaScript / Haskell / WebGL / [[App||https://phi16.github.io/Manifold/]] / [[Making||https://phi16.github.io/data/ssrrrs_17.pdf]]",c:`
+      /*{n:"mani", t:"Manifold", d:"2017/10/05 Simulation Visualization<br>JavaScript / Haskell / WebGL / [[App||https://phi16.github.io/Manifold/]] / [[Making||https://phi16.github.io/data/ssrrrs_17.pdf]]",c:`
 非ユークリッド空間の上で二次元の物理演算を行えるシミュレータ。<br>
 歪んだ空間上での物体がどう振る舞うのかを見てみたいと思いリーマン幾何を少し学んだ。<br>
 空間を距離関数として表現するだけで物理演算からシミュレーションまで行える。<br>
 物体を剛体としてモデル化することができないため、幾らか条件を緩めて扱っている。
-      `},
-      {n:"rnca", t:"Runica", d:"2018/07/26 Input Method<br>Kotlin / Android / [[Movie||https://twitter.com/phi16_/status/1022473343704883200]]",c:`
+      `},*/
+      {n:"rnca", t:"Runica", d:"2018/07/26 Input Method<br>Kotlin / Android / [[Video||https://twitter.com/phi16_/status/1022473343704883200]]",c:`
 2-タッチ入力を改造し続けた結果出来た入力メソッド。<br>
 フリックとは異なるタッチパネルの利用として、連続したスライドによって文字入力を行う。<br>
 頻度の高いものを優先的に配置したため学習コストは掛かるものの実用十分な速度が出ている。<br>
