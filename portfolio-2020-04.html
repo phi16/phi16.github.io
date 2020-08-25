@@ -77,11 +77,35 @@ img, .pn {
               <li>ここ2年はあるVRSNS (<a href="https://vrchat.com/">VRChat</a>) に常駐しつつ友人などとVR空間での表現を追究しています。</li>
               <li>言語 / 環境</li>
               <ul>
-                <li>実務(アルバイト): C++, HLSL / GLSL, OpenGL, JavaScript</li>
-                <li>他メイン利用: Unity, C#, Haskell</li>
-                <li>その他: Kotlin, Agda, 他</li>
+                <li>実務(アルバイト): C++, UE4BP, HLSL / GLSL, OpenGL, JavaScript</li>
+                <li>他メイン利用: Haskell, Unity</li>
+                <li>その他: C#, Java, Kotlin, Agda, 他</li>
               </ul>
             </ul>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="title">Interest</div>
+          <div class="indent">
+            <div class="stat"></div>
+            「良い言語」についての興味から型理論や圏論など (大学での研究分野はこちら側)。<br>
+            「良い表現」についての興味からレンダリングやシェーダなど。<br>
+            またそれらを最大限活用するためのインタラクションやデザインなどに興味を持っています。<br>
+            <ul>
+              <li>「可能性」</li>
+              <ul>
+                <li>人が受理できる情報量</li>
+                <li>人が処理できる複雑性</li>
+                <li>識らないモノでも操作が出来る</li>
+              </ul>
+              <li>「正しさ」</li>
+              <ul>
+                <li>モノの棲むべき世界における表現</li>
+                <li>歴史から離れた最適解</li>
+                <li>適合できうる限界のインタフェース</li>
+              </ul>
+            </ul>
+            見たいと思ったものを作っています。
           </div>
         </div>
         <div class="widget">
@@ -100,7 +124,7 @@ img, .pn {
               <li>
                 2019/08/18 VR Space<br>
                 <a href="http://xrarchi.org/vraa1/">VR Architecture Award 01</a> 提出作品 「お絵かきと対話」 <a href="http://xrarchi.org/vraa1/worklist/">モスコミュール賞を頂きました。</a><br>
-                自身の描いた絵に対して、立体感を擬似的につける「異なる存在」が居る世界を作りました。<br>
+                自身の描いた絵に対して、擬似的に立体感をつける「異なる存在」が居る世界を作りました。<br>
                 <img src="/img/scsh/cwyf.png" height="315">
               </li>
               <li>
@@ -132,35 +156,40 @@ img, .pn {
 ラムダ抽象のお絵かき上での表現に惹かれて実装したもので、再帰呼び出しなども可能。<br>
 設計不足もあって表現しきれなかった部分があるのでまた作りたい。<br>
 タイル型UI部分から自作。ランタイムを弄ることで異なる言語を表現したものもある。<br>
-      `},
+      `},*/
       {n:"gcha", t:"課金王者ガチャキング", d:"2017/04/07 Online Board Game<br>JavaScript / Canvas / [[App||http://gachaking.trap.games/]]",c:`
 ガチャを引いて満足しきるまでを競うボードゲーム。<br>
 7人ほどのチームで開発、クライアントサイドプログラマとして参加。<br>
 描画や主処理の他にも、アニメーションやゲームの流れなどを記述するための機構を実装した。
       `},
-      {n:"mani", t:"Manifold", d:"2017/10/05 Simulation Visualization<br>JavaScript / Haskell / WebGL / [[App||https://phi16.github.io/Manifold/]] / [[Making||https://phi16.github.io/data/ssrrrs_17.pdf]]",c:`
+      /*{n:"mani", t:"Manifold", d:"2017/10/05 Simulation Visualization<br>JavaScript / Haskell / WebGL / [[App||https://phi16.github.io/Manifold/]] / [[Making||https://phi16.github.io/data/ssrrrs_17.pdf]]",c:`
 非ユークリッド空間の上で二次元の物理演算を行えるシミュレータ。<br>
 歪んだ空間上での物体がどう振る舞うのかを見てみたいと思いリーマン幾何を少し学んだ。<br>
 空間を距離関数として表現するだけで物理演算からシミュレーションまで行える。<br>
 物体を剛体としてモデル化することができないため、幾らか条件を緩めて扱っている。
       `},*/
+      {n:"rnca", t:"Runica", d:"2018/07/26 Input Method<br>Kotlin / Android / [[Video||https://twitter.com/phi16_/status/1022473343704883200]]",c:`
+2-タッチ入力を改造し続けた結果出来た入力メソッド。<br>
+フリックとは異なるタッチパネルの利用として、連続したスライドによって文字入力を行う。<br>
+頻度の高いものを優先的に配置したため学習コストは掛かるものの実用十分な速度が出ている。<br>
+現在は一部の文字の入力ができないため、もう一つの自作入力メソッドを併用して運用している。
+      `},
+      {n:"vcpk", t:"Vacuous Park", d:"2018/08/23 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_465649aa-d1da-49ff-b90c-456187a1c54e]]",c:`
+パーティクルのみで出来た観覧車のある「虚無の遊園地」。<br>
+頂点シェーダという表現方法を得た後に様々な遭遇を経て偶然完成したもの。<br>
+遠くから観たときの荘厳さと、上から眺めたときの遠景の輝きが気に入っている。
+      `},
       {n:"stir2", t:"Stair Hall", d:"2019/05/04 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_e2bfb0e6-7f12-4e63-b44a-4a22078596ce]] / [[Video||https://twitter.com/phi16_/status/1124367556901392384]] / [[NEORT||https://neort.io/art/bpmc1c43p9fbkbq840dg]] / [[Making||https://phi16.booth.pm/items/1456068]]",c:`
 無限に広がる階段を彷徨えるワールド。<br>
-階段の組み合わせの設計から始まり、モデリング及び無限表示の実装や高速化を行った。<br>
+階段の組み合わせの設計から始まりモデリング及び無限表示の実装や高速化を行った。<br>
 また乗ると飛べる箒も制作し、この空間の中を自由に飛び回ることができる。
       `},
-      {n:"silv", t:"Silver and You", d:"2020/04/26 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_dd0d42aa-5317-45fa-992a-617e1e11ab1b]]", c:`
-髪のシミュレーションとレンダリングをしたワールド。<br>
-単に実装したくて制作したものをVRChatで動くように移植した。<br>
-手とのインタラクションによって髪に重みを感じられて新鮮な点もあった。<br>
-      `},
-      {n:"derv", t:"Derivation", d:"2020/05/13 Generative Art<br>WebGL / [[NEORT||https://neort.io/art/bqtdqo43p9f48fkit640]]", c:`
-動的生成されるコースに沿って線が走っていくヴィジュアル。<br>
-エフェクトやカメラワークなどを自由に作ってみる機会として制作。<br>
-      `},
-      {n:"ameb", t:"Amebient", d:"2020/07/19 VR Space<br>Unity / VRChat / [[World||https://vrchat.com/home/launch?worldId=wrld_4e8f3e44-dca9-4ae7-9580-954bb4b2cbc4]] / [[Making||https://twitter.com/rakuraku_vtube/status/1284823157036118017]]", c:`
-3人の共同で制作したワールドで、ギミック面とヴィジュアル面を担当。<br>
-落ちてくる水滴に金属が衝突することで音が鳴り、自由に演奏などが出来る。<br>
+      {n:"do06", t:"D:0629", d:"2019/06/29 VR UI<br>Unity / VRChat / [[Video||https://twitter.com/phi16_/status/1145993735705993223]]",c:`
+リアルタイムパーティクル演出のための専用UI。<br>
+文字のような大量のパーティクルの生成・移動・スタイルなどを操作できる。<br>
+表現したいパーティクルの動きを分解してUIとして再構成した結果として完成した。<br>
+「手動オーディオヴィジュアライザ」としての働きは十分達成していた。<br>
+なおVRChat上で動作させる為、全ての機構がシェーダで実装されている。
       `}
     ];
     const cont = $("#pelems")[0];
