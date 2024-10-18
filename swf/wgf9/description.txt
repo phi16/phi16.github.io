@@ -1,4 +1,0 @@
-Simulated Annealing
-
-I don't know this is correct :(
-but this looks working well

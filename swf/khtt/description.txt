@@ -1,5 +1,0 @@
-The Future
-
-Inspired by Time of Imapct(　http://wonderfl.net/c/7CxS　)
-If comment out "update(false)" at line 146, it'll be faster,
-but the calculation will be inaccurate, the Future diverging :(

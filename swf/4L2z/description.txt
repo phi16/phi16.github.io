@@ -1,9 +1,0 @@
-Distinct Developments
-
-連続して11個の展開図全て作ることができればクリア。同じのつくっちゃだめ。
-赤くなったら最初からなのです。
-
-Let's make all patterns of the developments of the cube!
-
-Click : Set a position
-Long Press : Fold a development
